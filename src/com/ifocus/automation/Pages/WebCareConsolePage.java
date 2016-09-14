@@ -242,7 +242,7 @@ public class WebCareConsolePage {
 			actualInput = bpactual.get(k).split(";");
 		}
 
-		String inputs[] = { "Aug 31, 2016", "2:06:23 PM", "114/74", "83", "88" };
+		String inputs[] = { "Sep 14, 2016", "11:11:29 AM", "97/58", "66", "75" };
 		actualInput = bpactual.get(0).split(";");
 
 		System.out.println("\nExpected Date of Submission: " + inputs[0] + " -->  ");

@@ -38,7 +38,7 @@ public class MobileCareConsolePage {
 		WebDriver driver = BaseClass.openMobileCC();
 		System.out.println("\n**NOSEBLEED ENTRY EXECUTION STARTED ON MOBILE**\n");
 		
-		String xlPath = ("D:/Testdata/AMCAppiumTestData.xlsx");
+		String xlPath = ("C:/AMCAppiumTestData.xlsx");
 		String sheet = "Details";
 		
 		Thread.sleep(1000);

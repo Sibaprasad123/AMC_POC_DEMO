@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
-    <classes>
-   <!--    <class name="com.ifocus.automation.Testscripts.BloodPressureTest"/> -->
-       <class name="com.ifocus.automation.Testscripts.NoseBleedTest"/>
-      
-    </classes>
-  </test> <!-- Test -->
+	<listeners>
+		<listener class-name="com.ifocus.automation.Logging.ListenerClass" />
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="com.ifocus.automation.Testscripts.BloodPressureTest"/>
+			<class name="com.ifocus.automation.Testscripts.NoseBleedTest" />
+
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
