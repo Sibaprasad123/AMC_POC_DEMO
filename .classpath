@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="Jarfiles/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="lib/saxon-8.7.jar"/>
 	<classpathentry kind="lib" path="lib/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="lib/testng-6.9.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

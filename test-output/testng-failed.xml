@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ifocus.automation.Logging.ListenerClass"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
       <class name="com.ifocus.automation.Testscripts.NoseBleedTest">
         <methods>
           <include name="NoseBleedMobile"/>
+          <include name="NoseBleedWeb"/>
         </methods>
       </class> <!-- com.ifocus.automation.Testscripts.NoseBleedTest -->
+      <class name="com.ifocus.automation.Testscripts.BloodPressureTest">
+        <methods>
+          <include name="BPMeasureWeb"/>
+          <include name="BPMeasureMobile"/>
+          <include name="deviceSettings"/>
+        </methods>
+      </class> <!-- com.ifocus.automation.Testscripts.BloodPressureTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

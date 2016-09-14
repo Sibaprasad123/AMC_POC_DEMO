@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 08 14:43:53 IST 2016</td>
+<td>Started on:</td><td>Wed Sep 14 15:36:38 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9882 ms)</td>
+<tr><td>Total time:</td><td>108 seconds (108015 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,40 +75,42 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile()'><b>NoseBleedMobile</b><br>Test class: com.ifocus.automation.Testscripts.NoseBleedTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Aug 31st, 2016&quot;}
+<td title='com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb()'><b>BPMeasureWeb</b><br>Test class: com.ifocus.automation.Testscripts.BloodPressureTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@class=&apos;panel-body dashboardWidget&apos;]//button[contains(.,&apos;Deregister&apos;)]&quot;}
   (Session info: chrome=52.0.2743.116)
-  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;IFOCUS-LT35&apos;, ip: &apos;10.189.33.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+System info: host: &apos;IFOCUSODC-PC34&apos;, ip: &apos;10.189.33.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\ashwini.n\AppData\Local\Temp\scoped_dir14108_28431}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08cb491486b439d998e64ac5e91b813f
-*** Element info: {Using=name, value=Aug 31st, 2016}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\iFocus\AppData\Local\Temp\scoped_dir6752_14820}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ee79305ee679380340b9a6332c46e1ac
+*** Element info: {Using=xpath, value=.//*[@class=&apos;panel-body dashboardWidget&apos;]//button[contains(.,&apos;Deregister&apos;)]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.ifocus.automation.Utilities.SelectOption.returnElement(SelectOption.java:57)
-	at com.ifocus.automation.Pages.MobileCareConsolePage.makeJournalEntry(MobileCareConsolePage.java:55)
-	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile(NoseBleedTest.java:16)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089589253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2089589253'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Aug 31st, 2016&quot;}
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.isDisplayed(Unknown Source)
+	at com.ifocus.automation.Pages.WebCareConsolePage.validateDevice(WebCareConsolePage.java:196)
+	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:47)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538592647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace538592647'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@class=&apos;panel-body dashboardWidget&apos;]//button[contains(.,&apos;Deregister&apos;)]&quot;}
   (Session info: chrome=52.0.2743.116)
-  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;IFOCUS-LT35&apos;, ip: &apos;10.189.33.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+System info: host: &apos;IFOCUSODC-PC34&apos;, ip: &apos;10.189.33.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\ashwini.n\AppData\Local\Temp\scoped_dir14108_28431}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08cb491486b439d998e64ac5e91b813f
-*** Element info: {Using=name, value=Aug 31st, 2016}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\iFocus\AppData\Local\Temp\scoped_dir6752_14820}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ee79305ee679380340b9a6332c46e1ac
+*** Element info: {Using=xpath, value=.//*[@class=&apos;panel-body dashboardWidget&apos;]//button[contains(.,&apos;Deregister&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -117,12 +119,14 @@ Session ID: 08cb491486b439d998e64ac5e91b813f
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.ifocus.automation.Utilities.SelectOption.returnElement(SelectOption.java:57)
-	at com.ifocus.automation.Pages.MobileCareConsolePage.makeJournalEntry(MobileCareConsolePage.java:55)
-	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile(NoseBleedTest.java:16)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.isDisplayed(Unknown Source)
+	at com.ifocus.automation.Pages.WebCareConsolePage.validateDevice(WebCareConsolePage.java:196)
+	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -148,8 +152,121 @@ Session ID: 08cb491486b439d998e64ac5e91b813f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 </pre></div></td>
-<td>9</td>
-<td>com.ifocus.automation.Testscripts.NoseBleedTest@6574b225</td></tr>
+<td>59</td>
+<td>com.ifocus.automation.Testscripts.BloodPressureTest@1b604f19</td></tr>
+<tr>
+<td title='com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile()'><b>NoseBleedMobile</b><br>Test class: com.ifocus.automation.Testscripts.NoseBleedTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;IFOCUSODC-PC34&apos;, ip: &apos;10.189.33.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.ifocus.automation.Testscripts.BaseClass.openMobileCC(BaseClass.java:53)
+	at com.ifocus.automation.Pages.MobileCareConsolePage.makeJournalEntry(MobileCareConsolePage.java:38)
+	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile(NoseBleedTest.java:18)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454104863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454104863'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;IFOCUSODC-PC34&apos;, ip: &apos;10.189.33.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.ifocus.automation.Testscripts.BaseClass.openMobileCC(BaseClass.java:53)
+	at com.ifocus.automation.Pages.MobileCareConsolePage.makeJournalEntry(MobileCareConsolePage.java:38)
+	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile(NoseBleedTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.ifocus.automation.Testscripts.NoseBleedTest@457e2f02</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureMobile()'><b>BPMeasureMobile</b><br>Test class: com.ifocus.automation.Testscripts.BloodPressureTest</td>
+<td></td>
+<td>4</td>
+<td>com.ifocus.automation.Testscripts.BloodPressureTest@1b604f19</td></tr>
+<tr>
+<td title='com.ifocus.automation.Testscripts.BloodPressureTest.deviceSettings()'><b>deviceSettings</b><br>Test class: com.ifocus.automation.Testscripts.BloodPressureTest</td>
+<td></td>
+<td>43</td>
+<td>com.ifocus.automation.Testscripts.BloodPressureTest@1b604f19</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedWeb()'><b>NoseBleedWeb</b><br>Test class: com.ifocus.automation.Testscripts.NoseBleedTest</td>
+<td><div><pre>java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@457e2f02] depends on not successfully finished methods
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180244251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180244251'><pre>java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@457e2f02] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>
