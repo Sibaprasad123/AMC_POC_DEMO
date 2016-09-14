@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44034" started-at="2016-09-12T09:09:16Z" finished-at="2016-09-12T09:10:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44034" started-at="2016-09-12T09:09:16Z" finished-at="2016-09-12T09:10:00Z">
+      <class name="com.ifocus.automation.Testscripts.NoseBleedTest">
+        <test-method status="PASS" signature="NoseBleedMobile()[pri:1, instance:com.ifocus.automation.Testscripts.NoseBleedTest@6574b225]" name="NoseBleedMobile" duration-ms="44015" started-at="2016-09-12T14:39:16Z" finished-at="2016-09-12T14:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoseBleedMobile -->
+      </class> <!-- com.ifocus.automation.Testscripts.NoseBleedTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
