@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="5" passed="3">
+<testng-results skipped="1" failed="2" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="268657" started-at="2016-09-15T10:38:33Z" finished-at="2016-09-15T10:43:02Z">
+  <suite name="Suite" duration-ms="110982" started-at="2016-09-15T11:40:38Z" finished-at="2016-09-15T11:42:29Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="268657" started-at="2016-09-15T10:38:33Z" finished-at="2016-09-15T10:43:02Z">
+    <test name="Test" duration-ms="110982" started-at="2016-09-15T11:40:38Z" finished-at="2016-09-15T11:42:29Z">
       <class name="com.ifocus.automation.Testscripts.BloodPressureTest">
-        <test-method status="PASS" signature="deviceSettings()[pri:1, instance:com.ifocus.automation.Testscripts.BloodPressureTest@63d4e2ba]" name="deviceSettings" duration-ms="39479" started-at="2016-09-15T16:08:33Z" finished-at="2016-09-15T16:09:13Z">
+        <test-method status="PASS" signature="deviceSettings()[pri:1, instance:com.ifocus.automation.Testscripts.BloodPressureTest@63d4e2ba]" name="deviceSettings" duration-ms="48482" started-at="2016-09-15T17:10:38Z" finished-at="2016-09-15T17:11:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deviceSettings -->
-        <test-method status="PASS" signature="BPMeasureMobile()[pri:2, instance:com.ifocus.automation.Testscripts.BloodPressureTest@63d4e2ba]" name="BPMeasureMobile" duration-ms="4309" started-at="2016-09-15T16:09:13Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.deviceSettings" finished-at="2016-09-15T16:09:17Z">
+        <test-method status="PASS" signature="BPMeasureMobile()[pri:2, instance:com.ifocus.automation.Testscripts.BloodPressureTest@63d4e2ba]" name="BPMeasureMobile" duration-ms="4396" started-at="2016-09-15T17:11:27Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.deviceSettings" finished-at="2016-09-15T17:11:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BPMeasureMobile -->
-        <test-method status="FAIL" signature="BPMeasureWeb()[pri:3, instance:com.ifocus.automation.Testscripts.BloodPressureTest@63d4e2ba]" name="BPMeasureWeb" duration-ms="63699" started-at="2016-09-15T16:09:17Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureMobile" finished-at="2016-09-15T16:10:21Z">
+        <test-method status="FAIL" signature="BPMeasureWeb()[pri:3, instance:com.ifocus.automation.Testscripts.BloodPressureTest@63d4e2ba]" name="BPMeasureWeb" duration-ms="58070" started-at="2016-09-15T17:11:31Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureMobile" finished-at="2016-09-15T17:12:29Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//*[@class='panel-body dashboardWidget']//button[contains(.,'Deregister')]"}
   (Session info: chrome=52.0.2743.116)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 21 milliseconds
+Command duration or timeout: 22 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'IFOCUSODC-PC34', ip: '10.189.33.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\iFocus\AppData\Local\Temp\scoped_dir2068_6613}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ce4867762b519fa1ea9828b1e1f58b9e
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\iFocus\AppData\Local\Temp\scoped_dir11756_29462}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a813b5ca280803c8480d258e1762acee
 *** Element info: {Using=xpath, value=.//*[@class='panel-body dashboardWidget']//button[contains(.,'Deregister')]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@class='panel-body dashboardWidget']//button[contains(.,'Deregister')]"}
   (Session info: chrome=52.0.2743.116)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 21 milliseconds
+Command duration or timeout: 22 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'IFOCUSODC-PC34', ip: '10.189.33.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\iFocus\AppData\Local\Temp\scoped_dir2068_6613}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ce4867762b519fa1ea9828b1e1f58b9e
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\iFocus\AppData\Local\Temp\scoped_dir11756_29462}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a813b5ca280803c8480d258e1762acee
 *** Element info: {Using=xpath, value=.//*[@class='panel-body dashboardWidget']//button[contains(.,'Deregister')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -89,26 +89,34 @@ Session ID: ce4867762b519fa1ea9828b1e1f58b9e
         </test-method> <!-- BPMeasureWeb -->
       </class> <!-- com.ifocus.automation.Testscripts.BloodPressureTest -->
       <class name="com.ifocus.automation.Testscripts.NoseBleedTest">
-        <test-method status="PASS" signature="NoseBleedMobile()[pri:1, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7006c658]" name="NoseBleedMobile" duration-ms="35867" started-at="2016-09-15T16:10:21Z" finished-at="2016-09-15T16:10:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NoseBleedMobile -->
-        <test-method status="FAIL" signature="NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7006c658]" name="NoseBleedWeb" duration-ms="125300" started-at="2016-09-15T16:10:56Z" depends-on-methods="com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile" finished-at="2016-09-15T16:13:02Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="NoseBleedMobile()[pri:1, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7006c658]" name="NoseBleedMobile" duration-ms="20" started-at="2016-09-15T17:12:29Z" finished-at="2016-09-15T17:12:29Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[
-No match: Given NoseBleed Entry is Not submitted to the Web
- expected [false] but found [true]]]>
+              <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'IFOCUSODC-PC34', ip: '10.189.33.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-No match: Given NoseBleed Entry is Not submitted to the Web
- expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertFalse(Assert.java:63)
-	at com.ifocus.automation.Pages.WebCareConsolePage.validateNoseBleedEntry(WebCareConsolePage.java:317)
-	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedWeb(NoseBleedTest.java:31)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'IFOCUSODC-PC34', ip: '10.189.33.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at com.ifocus.automation.Testscripts.BaseClass.openMobileCC(BaseClass.java:53)
+	at com.ifocus.automation.Pages.MobileCareConsolePage.makeJournalEntry(MobileCareConsolePage.java:38)
+	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile(NoseBleedTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -134,7 +142,36 @@ No match: Given NoseBleed Entry is Not submitted to the Web
 	at org.testng.TestNG.main(TestNG.java:1324)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoseBleedMobile -->
+        <test-method status="SKIP" signature="NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7006c658]" name="NoseBleedWeb" duration-ms="0" started-at="2016-09-15T17:12:29Z" depends-on-methods="com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile" finished-at="2016-09-15T17:12:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7006c658] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7006c658] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NoseBleedWeb -->
