@@ -4,12 +4,6 @@
   <listeners>
     <listener class-name="com.ifocus.automation.Logging.ListenerClass"/>
   </listeners>
-  <test name="Test">
-    <classes>
-      <class name="com.ifocus.automation.Testscripts.BloodPressureTest"/>
-      <class name="com.ifocus.automation.Testscripts.NoseBleedTest"/>
-    </classes>
-  </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
       <class name="com.ifocus.automation.Testscripts.NoseBleedTest">
