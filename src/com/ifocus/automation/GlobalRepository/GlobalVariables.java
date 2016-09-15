@@ -11,7 +11,7 @@ public class GlobalVariables {
 	//Global variables for Device details
 	public static String model;
 	public static String platform;
-	public static String serialNo;
+	public static String serialNum;
 /*	 public static String platform="4.4.2";
 	 public static String model="SCH-I605";
 	 public static String serialNo="60E30519F7530Fc7";*/
