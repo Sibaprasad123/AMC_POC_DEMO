@@ -2,6 +2,7 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -48,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\workspace\AMC_POC_DEMO\testng.xml</span>
+                    <span>C:\Users\iFocus\workspace\AMC_POC_DEMO\AMC_POC_DEMO\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -166,7 +167,7 @@
                   </a> <!-- NoseBleedMobile -->
                   <span class="method-name">NoseBleedMobile</span>
                   <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 19 milliseconds
+Command duration or timeout: 16 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;IFOCUSODC-PC34&apos;, ip: &apos;10.189.33.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
@@ -179,7 +180,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at com.ifocus.automation.Testscripts.BaseClass.openMobileCC(BaseClass.java:53)
 	at com.ifocus.automation.Pages.MobileCareConsolePage.makeJournalEntry(MobileCareConsolePage.java:38)
 	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile(NoseBleedTest.java:18)
-... Removed 27 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -196,14 +197,18 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
                   <a name="BPMeasureWeb">
                   </a> <!-- BPMeasureWeb -->
                   <span class="method-name">BPMeasureWeb</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-	at com.sun.proxy.$Proxy5.get(Unknown Source)
-	at com.ifocus.automation.Pages.WebCareConsolePage.goToDashboard(WebCareConsolePage.java:180)
-	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:46)
-... Removed 27 stack frames
+                  <div class="stack-trace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\iFocus\workspace\AMC_POC_DEMO\AMC_POC_DEMO\ AMC_POC_DEMO\common%20files\chromedriver.exe 
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at com.ifocus.automation.Testscripts.BaseClass.startSeleniumDriver(BaseClass.java:20)
+	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:41)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -220,8 +225,8 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
                   <a name="NoseBleedWeb">
                   </a> <!-- NoseBleedWeb -->
                   <span class="method-name">NoseBleedWeb</span>
-                  <div class="stack-trace">java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7006c658] depends on not successfully finished methods
-... Removed 16 stack frames
+                  <div class="stack-trace">java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9] depends on not successfully finished methods
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -252,7 +257,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\workspace\AMC_POC_DEMO\testng.xml</span>
+            <span class="header-content">C:\Users\iFocus\workspace\AMC_POC_DEMO\AMC_POC_DEMO\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -307,30 +312,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BPMeasureWeb')
+data.setCell(0, 1, 'deviceSettings')
 data.setCell(0, 2, 'com.ifocus.automation.Testscripts.BloodPressureTest')
-data.setCell(0, 3, 47659);
+data.setCell(0, 3, 42101);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deviceSettings')
+data.setCell(1, 1, 'BPMeasureMobile')
 data.setCell(1, 2, 'com.ifocus.automation.Testscripts.BloodPressureTest')
-data.setCell(1, 3, 38268);
+data.setCell(1, 3, 4451);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'BPMeasureMobile')
-data.setCell(2, 2, 'com.ifocus.automation.Testscripts.BloodPressureTest')
-data.setCell(2, 3, 4372);
+data.setCell(2, 1, 'NoseBleedMobile')
+data.setCell(2, 2, 'com.ifocus.automation.Testscripts.NoseBleedTest')
+data.setCell(2, 3, 20);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'NoseBleedMobile')
-data.setCell(3, 2, 'com.ifocus.automation.Testscripts.NoseBleedTest')
-data.setCell(3, 3, 22);
+data.setCell(3, 1, 'BPMeasureWeb')
+data.setCell(3, 2, 'com.ifocus.automation.Testscripts.BloodPressureTest')
+data.setCell(3, 3, 10);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'NoseBleedWeb')
 data.setCell(4, 2, 'com.ifocus.automation.Testscripts.NoseBleedTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -363,13 +368,13 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BPMeasureMobile</span>
-                <span class="method-start">38270 ms</span>
+                <span class="method-start">42104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">BPMeasureWeb</span>
-                <span class="method-start">42642 ms</span>
+                <span class="method-start">46556 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -378,7 +383,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">NoseBleedMobile</span>
-                <span class="method-start">90302 ms</span>
+                <span class="method-start">46569 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
