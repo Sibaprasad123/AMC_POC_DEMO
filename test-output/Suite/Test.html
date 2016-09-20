@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 20 15:06:49 IST 2016</td>
+<td>Started on:</td><td>Tue Sep 20 16:40:32 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46608 ms)</td>
+<tr><td>Total time:</td><td>95 seconds (95926 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,29 +76,25 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb()'><b>BPMeasureWeb</b><br>Test class: com.ifocus.automation.Testscripts.BloodPressureTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\iFocus\workspace\AMC_POC_DEMO\AMC_POC_DEMO\ AMC_POC_DEMO\common%20files\chromedriver.exe 
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
-	at com.ifocus.automation.Testscripts.BaseClass.startSeleniumDriver(BaseClass.java:20)
-	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:41)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409154977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1409154977'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\iFocus\workspace\AMC_POC_DEMO\AMC_POC_DEMO\ AMC_POC_DEMO\common%20files\chromedriver.exe 
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
-	at com.ifocus.automation.Testscripts.BaseClass.startSeleniumDriver(BaseClass.java:20)
-	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:41)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy6.get(Unknown Source)
+	at com.ifocus.automation.Pages.WebCareConsolePage.goToDashboard(WebCareConsolePage.java:180)
+	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:46)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906879951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906879951'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy6.get(Unknown Source)
+	at com.ifocus.automation.Pages.WebCareConsolePage.goToDashboard(WebCareConsolePage.java:180)
+	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -124,12 +120,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 </pre></div></td>
-<td>0</td>
+<td>48</td>
 <td>com.ifocus.automation.Testscripts.BloodPressureTest@482f8f11</td></tr>
 <tr>
 <td title='com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile()'><b>NoseBleedMobile</b><br>Test class: com.ifocus.automation.Testscripts.NoseBleedTest</td>
 <td><div><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
+Command duration or timeout: 24 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;IFOCUSODC-PC34&apos;, ip: &apos;10.189.33.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
@@ -142,9 +138,9 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at com.ifocus.automation.Testscripts.BaseClass.openMobileCC(BaseClass.java:53)
 	at com.ifocus.automation.Pages.MobileCareConsolePage.makeJournalEntry(MobileCareConsolePage.java:38)
 	at com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile(NoseBleedTest.java:18)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace686989583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace686989583'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace70323523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace70323523'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;IFOCUSODC-PC34&apos;, ip: &apos;10.189.33.84&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
@@ -217,8 +213,8 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 <tr>
 <td title='com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedWeb()'><b>NoseBleedWeb</b><br>Test class: com.ifocus.automation.Testscripts.NoseBleedTest</td>
 <td><div><pre>java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9] depends on not successfully finished methods
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace550302731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace550302731'><pre>java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9] depends on not successfully finished methods
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace290579508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace290579508'><pre>java.lang.Throwable: Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)

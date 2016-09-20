@@ -2,36 +2,36 @@
 <testng-results skipped="1" failed="2" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46608" started-at="2016-09-20T09:36:49Z" finished-at="2016-09-20T09:37:36Z">
+  <suite name="Suite" duration-ms="95926" started-at="2016-09-20T11:10:32Z" finished-at="2016-09-20T11:12:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46608" started-at="2016-09-20T09:36:49Z" finished-at="2016-09-20T09:37:36Z">
+    <test name="Test" duration-ms="95926" started-at="2016-09-20T11:10:32Z" finished-at="2016-09-20T11:12:08Z">
       <class name="com.ifocus.automation.Testscripts.BloodPressureTest">
-        <test-method status="PASS" signature="deviceSettings()[pri:1, instance:com.ifocus.automation.Testscripts.BloodPressureTest@482f8f11]" name="deviceSettings" duration-ms="42101" started-at="2016-09-20T15:06:49Z" finished-at="2016-09-20T15:07:31Z">
+        <test-method status="PASS" signature="deviceSettings()[pri:1, instance:com.ifocus.automation.Testscripts.BloodPressureTest@482f8f11]" name="deviceSettings" duration-ms="42679" started-at="2016-09-20T16:40:32Z" finished-at="2016-09-20T16:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deviceSettings -->
-        <test-method status="PASS" signature="BPMeasureMobile()[pri:2, instance:com.ifocus.automation.Testscripts.BloodPressureTest@482f8f11]" name="BPMeasureMobile" duration-ms="4451" started-at="2016-09-20T15:07:31Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.deviceSettings" finished-at="2016-09-20T15:07:35Z">
+        <test-method status="PASS" signature="BPMeasureMobile()[pri:2, instance:com.ifocus.automation.Testscripts.BloodPressureTest@482f8f11]" name="BPMeasureMobile" duration-ms="4334" started-at="2016-09-20T16:41:14Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.deviceSettings" finished-at="2016-09-20T16:41:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BPMeasureMobile -->
-        <test-method status="FAIL" signature="BPMeasureWeb()[pri:3, instance:com.ifocus.automation.Testscripts.BloodPressureTest@482f8f11]" name="BPMeasureWeb" duration-ms="10" started-at="2016-09-20T15:07:35Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureMobile" finished-at="2016-09-20T15:07:35Z">
-          <exception class="java.lang.IllegalStateException">
+        <test-method status="FAIL" signature="BPMeasureWeb()[pri:3, instance:com.ifocus.automation.Testscripts.BloodPressureTest@482f8f11]" name="BPMeasureWeb" duration-ms="48853" started-at="2016-09-20T16:41:19Z" depends-on-methods="com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureMobile" finished-at="2016-09-20T16:42:08Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\iFocus\workspace\AMC_POC_DEMO\AMC_POC_DEMO\ AMC_POC_DEMO\common%20files\chromedriver.exe ]]>
+              <![CDATA[Index: 0, Size: 0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\iFocus\workspace\AMC_POC_DEMO\AMC_POC_DEMO\ AMC_POC_DEMO\common%20files\chromedriver.exe 
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
-	at com.ifocus.automation.Testscripts.BaseClass.startSeleniumDriver(BaseClass.java:20)
-	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:41)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy6.get(Unknown Source)
+	at com.ifocus.automation.Pages.WebCareConsolePage.goToDashboard(WebCareConsolePage.java:180)
+	at com.ifocus.automation.Testscripts.BloodPressureTest.BPMeasureWeb(BloodPressureTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,24 +58,24 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BPMeasureWeb -->
       </class> <!-- com.ifocus.automation.Testscripts.BloodPressureTest -->
       <class name="com.ifocus.automation.Testscripts.NoseBleedTest">
-        <test-method status="FAIL" signature="NoseBleedMobile()[pri:1, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9]" name="NoseBleedMobile" duration-ms="20" started-at="2016-09-20T15:07:35Z" finished-at="2016-09-20T15:07:35Z">
+        <test-method status="FAIL" signature="NoseBleedMobile()[pri:1, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9]" name="NoseBleedMobile" duration-ms="30" started-at="2016-09-20T16:42:08Z" finished-at="2016-09-20T16:42:08Z">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
+Command duration or timeout: 24 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'IFOCUSODC-PC34', ip: '10.189.33.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
+Command duration or timeout: 24 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'IFOCUSODC-PC34', ip: '10.189.33.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
@@ -122,7 +122,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NoseBleedMobile -->
-        <test-method status="SKIP" signature="NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9]" name="NoseBleedWeb" duration-ms="1" started-at="2016-09-20T15:07:36Z" depends-on-methods="com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile" finished-at="2016-09-20T15:07:36Z">
+        <test-method status="SKIP" signature="NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9]" name="NoseBleedWeb" duration-ms="0" started-at="2016-09-20T16:42:08Z" depends-on-methods="com.ifocus.automation.Testscripts.NoseBleedTest.NoseBleedMobile" finished-at="2016-09-20T16:42:08Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method NoseBleedTest.NoseBleedWeb()[pri:2, instance:com.ifocus.automation.Testscripts.NoseBleedTest@7823a2f9] depends on not successfully finished methods]]>
