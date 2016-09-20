@@ -17,6 +17,7 @@ public class GlobalVariables {
 	 public static String serialNo="60E30519F7530Fc7";*/
 	
 	//Global variables for NoseBleedJournalEntry
+	//Global variables for NoseBleedJournalEntry
 	public static String diaryDate;
 	public static String time;
 	public static String yesNo;
