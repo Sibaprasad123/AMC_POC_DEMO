@@ -16,7 +16,7 @@ public class BaseClass {
 	public static WebDriver startSeleniumDriver()
 	{
 		System.setProperty("webdriver.chrome.driver",
-				"C:/Sibaprasad_backup/Selenium/chromedriver.exe");
+				" AMC_POC_DEMO/common%20files/chromedriver.exe ");
 		WebDriver driver = new ChromeDriver();
 		return driver;
 	}
