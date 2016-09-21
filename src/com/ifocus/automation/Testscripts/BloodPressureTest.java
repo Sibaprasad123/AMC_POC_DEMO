@@ -27,7 +27,7 @@ public class BloodPressureTest {
 
 	}
 	
-	@Test(priority=2, dependsOnMethods="deviceSettings", enabled=true)
+	@Test(priority=2, dependsOnMethods="deviceSettings", enabled=false)
 	public void BPMeasureMobile() throws MalformedURLException
 	{
 		BaseClass.openMobileCC();
@@ -35,7 +35,7 @@ public class BloodPressureTest {
 	}
 	
 	//Adding dependsOnMethods="deviceSettings" for now, as "BPMeasureMobile" is enabled "false" for now.
-	@Test(priority=3, dependsOnMethods="BPMeasureMobile")
+	@Test(priority=3, dependsOnMethods="deviceSettings")
 	public void BPMeasureWeb() throws InterruptedException
 	{
 		WebDriver driver = BaseClass.startSeleniumDriver();
