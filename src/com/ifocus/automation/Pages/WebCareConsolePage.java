@@ -170,7 +170,7 @@ public class WebCareConsolePage {
 		//Code added for new application
 		sitesDD.click();
 		mayoNoseBleed.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		continueBtn.click();
 		
 		searchPatientBtn.sendKeys(GlobalVariables.patient);
