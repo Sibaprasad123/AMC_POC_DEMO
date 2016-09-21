@@ -29,6 +29,6 @@ public class NoseBleedTest {
 		WebCareConsolePage webccpage = new WebCareConsolePage(driver);		
 		webccpage.login(GlobalVariables.user, GlobalVariables.password);		
 		webccpage.validateNoseBleedEntry(driver);
-		
+		driver.close();
 	}
 }

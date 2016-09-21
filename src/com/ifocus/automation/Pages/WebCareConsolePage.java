@@ -169,8 +169,9 @@ public class WebCareConsolePage {
 	public void goToDashboard() throws InterruptedException {
 		//Code added for new application
 		sitesDD.click();
+		Thread.sleep(3000);
 		mayoNoseBleed.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		continueBtn.click();
 		
 		searchPatientBtn.sendKeys(GlobalVariables.patient);

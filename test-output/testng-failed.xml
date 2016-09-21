@@ -21,7 +21,6 @@
       <class name="com.ifocus.automation.Testscripts.BloodPressureTest">
         <methods>
           <include name="BPMeasureWeb"/>
-          <include name="BPMeasureMobile"/>
           <include name="deviceSettings"/>
         </methods>
       </class> <!-- com.ifocus.automation.Testscripts.BloodPressureTest -->

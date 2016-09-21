@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import com.ifocus.automation.GlobalRepository.GlobalVariables;
@@ -46,9 +47,10 @@ public class BloodPressureTest {
 		webccpage.goToDashboard();
 		webccpage.validateDevice();
 		webccpage.validateBPReadings();
-		
+		driver.close();
 	}
 	
-}
+
 
 //Screenshot code to be added.
+}
