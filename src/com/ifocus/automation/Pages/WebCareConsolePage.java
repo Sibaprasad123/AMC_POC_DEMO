@@ -285,6 +285,7 @@ public class WebCareConsolePage {
 
 			Thread.sleep(2000);
 			views.get(0).click();
+			System.out.println("test");
 
 			Thread.sleep(4000);
 			String s = diarydate.getText();
