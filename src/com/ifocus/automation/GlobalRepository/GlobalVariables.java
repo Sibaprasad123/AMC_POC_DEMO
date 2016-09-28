@@ -26,7 +26,8 @@ public class GlobalVariables {
 	public static String subdate;	
 	
 	//Global variables for BloodPressureMeasure
-	public static String bpdate;
+	public static String bpdate ;
+	
 	public static String bptime;
 	public static String sys;
 	public static String map;

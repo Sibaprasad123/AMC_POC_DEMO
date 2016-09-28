@@ -164,6 +164,8 @@ public class WebCareConsolePage {
 		Thread.sleep(1000);
 		registerDevice.click();
 		// System.out.println("Registration code: "+regCodeTb.getText());
+		
+		
 	}
 
 	public void goToDashboard() throws InterruptedException {
