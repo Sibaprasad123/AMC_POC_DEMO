@@ -1,6 +1,7 @@
 package com.ifocus.automation.GlobalRepository;
 
 //This class contains list of global variables.
+
 public class GlobalVariables {
 	//dfdffgfg ghghg fsfs
 	
