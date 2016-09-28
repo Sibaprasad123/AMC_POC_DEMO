@@ -20,6 +20,7 @@ public class ListenerClass extends TestListenerAdapter {
 	@Override
 	public void onTestStart(ITestResult tr) {		
 		//super.onTestStart(result);
+		//hjghjghj
 		
 		logger.info("TEST --> "+tr.getName()+" :STARTED");
 		System.out.println("\n-----------------------------------------------------------------------------------");
