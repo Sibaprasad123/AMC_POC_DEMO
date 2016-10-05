@@ -25,7 +25,7 @@ public class BloodPressureTest {
 		deviceSettings.verifyBluetooth(driver);
 		deviceSettings.verifyWiFi();
 		deviceSettings.captureDeviceDetails(driver);
-		System.out.println("first test");
+		System.out.println("first  test");
 
 	}
 	
