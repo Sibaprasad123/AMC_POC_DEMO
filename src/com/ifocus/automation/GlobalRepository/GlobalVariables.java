@@ -3,7 +3,7 @@ package com.ifocus.automation.GlobalRepository;
 //This class contains list of global variables.
 
 public class GlobalVariables {
-	//dfdffgfg ghghg fsfs fgfgf gggjhgh
+	//dfdffgfg ghghg fsfs fgfgf gggjhgh ghghgh
 	
 	public static final String  patient="444444";
 	public static String patientId;
