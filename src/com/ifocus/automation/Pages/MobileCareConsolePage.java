@@ -29,6 +29,7 @@ public class MobileCareConsolePage {
 	public MobileCareConsolePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		
 	}
 	
 		
